@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tommy Le Drone</title>
+    <link rel="shortcut icon" href="../images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sen:wght@700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <ul id="nav-mobile" class="navigate">
+                <li><img class="logo-tommy" src="../images/icon.png" alt="Logo Tommy le Drone"></li>
+                <li><a href="a"> </a></li>
+                <li><a target="_blank" href="https://www.ynov.com"><img class="logo-ynov" src="../images/logo-ynov.png" alt="Logo YNOV Campus"></a></li>
+                <li><a href="#vid">Vidéo</a></li>
+                <li><a href="#rs">Réseaux Sociaux</a></li>
+                <li><a href="#waw">Qui sommes-nous</a></li>
+                <li><a class="changeTheme">Change Theme</a></li>
+            </ul>
+        </div>
+    </nav>
+    <iframe id="vid" class="video" width="854" height="480" src="https://www.youtube.com/embed/fGsrf5ycWGY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2 id="rs">Retrouvez-nous sur nos différents réseaux !</h2><br>
+    <div>
+    <ul class="socials">
+        <ul>
+            <p>YouTube</p>
+            <a target="_blank" href="https://www.youtube.com/@tommyledrone/videos">
+                <img class="image-resize-youtube" src="../images/youtubethumbnailremake.png" alt="Logo YouTube">
+            </a>
+        </ul>
+        <ul>
+            <p>Instagram</p>
+            <a target="_blank" href="https://www.instagram.com/tommyledrone/">
+                <img class ="image-resize-instagram" src="../images/instagramremake.png" alt="Logo Instagram">
+            </a>
+        </ul>
+        <ul>
+            <p>TikTok</p>
+            <a target="_blank" href="https://www.tiktok.com/@tommyledrone">
+                <img class="image-resize-tiktok" src="../images/tiktokremake.png" alt="Logo TikTok">
+            </a>
+        </ul>
+    </ul>
+    </div>
+    <footer>
+        <div id="waw" class="footer-content">
+            <h3>Qui sommes-nous ?</h3>
+            <p>Nous sommes une équipe de 6 personnes voulant montrer la beauté du paysage français, et notre objectif est de vous faire découvrir toutes les facettes des régions françaises. Que ce soit au bord de la mer ou au cœur des montagnes, nous nous efforçons de vous présenter le meilleur de chaque région. Mais ce n'est pas tout ! Nous souhaitons également vous emmener à la rencontre des acteurs locaux, dans différents domaines, afin de vous faire découvrir leur savoir-faire et de mettre en lumière leurs activités.<br><br>
+
+                Pour profiter pleinement de nos contenus, vous pouvez nous retrouver sur plusieurs plateformes. Sur YouTube, vous trouverez des vidéos complètes qui vous permettront d'explorer en détail les paysages français, ainsi que des interviews inspirantes avec les personnes qui travaillent dans ces régions. Sur Instagram, vous pourrez admirer les meilleures photos des lieux que nous avons visités, capturant ainsi l'essence même de leur beauté. Et sur TikTok, nous vous offrons un condensé captivant de plans aériens réalisés avec notre fidèle compagnon, Tommy le Drone, pour vous donner un aperçu unique des endroits que nous avons explorés.<br><br>
+                
+                Tommy le Drone est un projet qui met en valeur le patrimoine et le savoir-faire français à travers des vidéos qui révèlent les paysages époustouflants de la France et des entretiens passionnants. Grâce à notre utilisation du drone, nous sommes en mesure de capturer des plans aériens immersifs qui subliment chaque destination !</p>
+        </div>
+        <div class="footer-bottom">Tommy le Drone 2023 - Montpellier YNOV Campus</div>
+    </footer>
+    <script>
+        const switchThemeButton = document.querySelector('.changeTheme');
+        let toggleTheme = 0;
+        
+        switchThemeButton.addEventListener('click', () => {
+            if(toggleTheme === 0) {
+                document.documentElement.style.setProperty('--background', '#20202e');
+                document.documentElement.style.setProperty('--nav-background', '#060814');
+                document.documentElement.style.setProperty('--text-light', '#ffffff');
+                document.documentElement.style.setProperty('--hover-color', '#4169e1');
+                document.documentElement.style.setProperty('--text-dark', '#ffffff');
+                document.documentElement.style.setProperty('--footer', '#000000');
+                document.documentElement.style.setProperty('--scrollbar', '#5a5083');
+                toggleTheme++;
+            } else {
+                document.documentElement.style.setProperty('--background', '#f3eedc');
+                document.documentElement.style.setProperty('--nav-background', '#75673b');
+                document.documentElement.style.setProperty('--text-light', '#ffffff');
+                document.documentElement.style.setProperty('--hover-color', '#e3c21f');
+                document.documentElement.style.setProperty('--text-dark', '#0f0f0f');
+                document.documentElement.style.setProperty('--footer', '#d2caad');
+                document.documentElement.style.setProperty('--scrollbar', '#5b4e19');
+                toggleTheme--;
+            }
+        })
+    </script>
+</body>
+</html>

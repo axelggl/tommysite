@@ -1,0 +1,210 @@
+:root {
+    --background: #f3eedc;
+    --nav-background: #75673b;
+    --text-light: #ffffff;
+    --hover-color: #e3c21f;
+    --text-dark: #0f0f0f;
+    --footer: #d2caad;
+    --scrollbar: #5b4e19;   
+}
+
+body::-webkit-scrollbar {
+    width: 0.3em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #0000004d;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.changeTheme {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--background);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+
+}
+
+.navbar {
+    background-color: var(--nav-background);
+    padding: 3em;
+}
+
+.navbar li {
+    display: inline;
+    padding: auto;
+}
+
+.navbar li a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 2em;
+    transition: .3s ease;
+    font-size: large;
+}
+
+.navbar li a:hover {
+    color: var(--hover-color);
+}
+
+.logo-tommy {
+    width: 6%;
+    float: left;
+    margin-top: -2em;
+}
+
+.logo-ynov {
+    width: 8%;
+    float: right;
+    margin-top: -0.9em;
+}
+
+.video {
+    display: block;
+    margin: auto auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2em;
+    font-family: 'Sen', sans-serif;
+    color: var(--text-dark);
+    padding-bottom: 0.2em;
+}
+
+a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    color: var(--text-light);
+    text-align: center;
+}
+
+.socials {
+    display: flex;              /* Transformation en flexbox */
+    padding: auto;   
+    margin: 1.5em 0;               /* Suppression des marges internes */
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.socials a {
+    display: flexbox;
+    min-width: 0.5em;
+    margin: 1.5em 5em;
+    padding: 0.4em 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.socials p {
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.image-resize-instagram {
+    width: 250px;
+    margin-top: 1em;
+    border-radius: 3%;
+    transition: transform .2s;
+}
+
+.image-resize-instagram:hover {
+    transform: scale(1.1);
+}
+
+.image-resize-youtube {
+    width: 250px;
+    margin-top: 1em;
+    border-radius: 3%;
+    transition: transform .2s;
+}
+
+.image-resize-youtube:hover {
+    transform: scale(1.1);
+}
+
+.image-resize-tiktok {
+    width: 250px;
+    margin-top: 1em;
+    border-radius: 3%;
+    transition: transform .2s;
+}
+
+.image-resize-tiktok:hover {
+    transform: scale(1.1);
+}
+
+.whoarewe {
+    box-sizing: border-box;
+    margin-top: 1.5em;
+    width: 100%;
+    padding: 1.5em 15%;
+    background: var(--nav-background);
+    display: flex;
+}
+
+footer {
+    background-color: var(--nav-background);
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    color: var(--text-light);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-content h3 {
+    font-weight: bolder;
+    font-size: 1.5em;
+    padding: 1em 0 2em 0 ;
+    text-align: center;
+}
+
+.footer-content p {
+    max-width: 1200px;
+    margin: 0.1em auto;
+    padding-bottom: 4em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.footer-bottom {
+    padding: 1em;
+    position: sticky;
+    left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: var(--footer);
+	color: var(--text-light);
+	text-align: center;
+}
